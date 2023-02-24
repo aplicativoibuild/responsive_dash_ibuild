@@ -1,30 +1,18 @@
-# ResponsiveDashIbuild
+Olá equipe Data Stone!
 
-A new Flutter project.
+Tudo bem, me chamo Beto Cristhian e sou desenvolvedor front end especialista em Flutter.
 
-## Getting Started
+Estou me candidatanto para participar da equipe de desenvolvimento DATA STONE e auxiliar no desenvolvimento da empresa exercendo o cargo de Desenvolvedor Front End Pleno, creio que tenho muito a ajudar e aprender em conjunto com a equipe.
 
-FlutterFlow projects are built to run on the Flutter _stable_ release.
 
-### IMPORTANT:
+Estou desenvolvendo um dashboard responsivo para controlar todos as etapas de gerenciamento (aprovação de novos cadastros, aprovação de alterações no perfil, aprovação de comentários no perfil, gerencimanto de assinaturas e analitcs) do aplicativo (www.ibuildapp.com.br)
 
-For projects with Firestore integration, you must first run the following commands to ensure the project compiles:
+Espero que gostem.
 
-```
-flutter pub get
-flutter packages pub run build_runner build --delete-conflicting-outputs
-```
+Obrigado!
 
-This command creates the generated files that parse each Record from Firestore into a schema object.
+Usei a ultima versão do flutter ( 3.7.5 ) e o SDK Dart (2.19.2) e criei o todo o UX usando o Flutter flow.
 
-### Getting started continued:
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,

@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "358641422229",
+    "project_id": "responsivedashibuild",
+    "storage_bucket": "responsivedashibuild.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358641422229:android:721772c6cabb12e7da709c",
+        "android_client_info": {
+          "package_name": "br.com.ibuildapp.responsivedashibuild"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358641422229-1crdr2j8ah533bum0nacujct9vt3porj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.ibuildapp.responsivedashibuild",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "358641422229-qp1ro5pbcmpgjgq8mglrqketheve5sgf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkaFgZkqTGxFZwPu5PDZIfbRmwjHiDI28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358641422229-qp1ro5pbcmpgjgq8mglrqketheve5sgf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "358641422229-0vtp9vm8o6mbapdva2v845ng62ca4drk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.ibuildapp.responsivedashibuild"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

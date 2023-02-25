@@ -9,7 +9,7 @@ export 'projects_alt/projects_alt_widget.dart' show ProjectsAltWidget;
 export 'team_members/team_members_widget.dart' show TeamMembersWidget;
 export 'team_members_clients_copy/team_members_clients_copy_widget.dart'
     show TeamMembersClientsCopyWidget;
-export 'projects_alt_copy/projects_alt_copy_widget.dart'
+export 'alteracoes/alteracoes_widget.dart'
     show ProjectsAltCopyWidget;
 export 'comentarios/comentarios_widget.dart'
     show ProjectsAltCopy2Widget;

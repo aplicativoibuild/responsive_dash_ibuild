@@ -3,7 +3,7 @@ import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../inicio/inicio_widget.dart';
 import '../projects/projects_widget.dart';
-import '../projects_alt_copy/projects_alt_copy_widget.dart';
+import '../alteracoes/alteracoes_widget.dart';
 import '../comentarios/comentarios_widget.dart';
 import '../team_members/team_members_widget.dart';
 import '../team_members_clients/team_members_clients_widget.dart';

@@ -6,7 +6,7 @@ import '../projects/projects_widget.dart';
 import '../alteracoes/alteracoes_widget.dart';
 import '../comentarios/comentarios_widget.dart';
 import '../team_members/team_members_widget.dart';
-import '../team_members_clients/team_members_clients_widget.dart';
+import '../parceiros/parceiros_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';

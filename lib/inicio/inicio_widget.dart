@@ -14,6 +14,7 @@ import 'package:provider/provider.dart';
 import 'inicio_model.dart';
 export 'inicio_model.dart';
 
+//inicio
 class HomePageWidget extends StatefulWidget {
   const HomePageWidget({Key? key}) : super(key: key);
 

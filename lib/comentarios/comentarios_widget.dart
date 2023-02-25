@@ -8,8 +8,8 @@ import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'projects_alt_copy2_model.dart';
-export 'projects_alt_copy2_model.dart';
+import 'comentarios_model.dart';
+export 'comentarios_model.dart';
 
 class ProjectsAltCopy2Widget extends StatefulWidget {
   const ProjectsAltCopy2Widget({Key? key}) : super(key: key);

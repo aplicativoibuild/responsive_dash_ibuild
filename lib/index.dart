@@ -11,7 +11,7 @@ export 'team_members_clients_copy/team_members_clients_copy_widget.dart'
     show TeamMembersClientsCopyWidget;
 export 'projects_alt_copy/projects_alt_copy_widget.dart'
     show ProjectsAltCopyWidget;
-export 'projects_alt_copy2/projects_alt_copy2_widget.dart'
+export 'comentarios/comentarios_widget.dart'
     show ProjectsAltCopy2Widget;
-export 'team_members_clients_copy_copy/team_members_clients_copy_copy_widget.dart'
+export 'mensagens/mensagens_widget.dart'
     show TeamMembersClientsCopyCopyWidget;

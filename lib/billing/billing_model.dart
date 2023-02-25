@@ -1,4 +1,4 @@
-import '../billing_copy/billing_copy_widget.dart';
+import '../upgrade_manual/upgrade_manual_widget.dart';
 import '../components/main_web_nav_widget.dart';
 import '../components/message_bottom_sheet_widget.dart';
 import '../components/mobile_nav_widget.dart';

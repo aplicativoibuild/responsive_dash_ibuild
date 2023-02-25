@@ -1,7 +1,7 @@
 import '../billing/billing_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
-import '../home_page/home_page_widget.dart';
+import '../inicio/inicio_widget.dart';
 import '../projects/projects_widget.dart';
 import '../team_members/team_members_widget.dart';
 import 'package:flutter/material.dart';

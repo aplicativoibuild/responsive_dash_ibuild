@@ -3,7 +3,10 @@ import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../home_page/home_page_widget.dart';
 import '../projects/projects_widget.dart';
+import '../projects_alt_copy/projects_alt_copy_widget.dart';
+import '../projects_alt_copy2/projects_alt_copy2_widget.dart';
 import '../team_members/team_members_widget.dart';
+import '../team_members_clients/team_members_clients_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -75,11 +78,29 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
         child: Column(
           mainAxisSize: MainAxisSize.max,
           children: [
-            Image.network(
-              'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/dashboard-data-stone-4wkh8k/assets/s4802hntu0y4/icone_ibuild_partner_google_play.png',
-              width: 25,
-              height: 25,
-              fit: BoxFit.cover,
+            InkWell(
+              onTap: () async {
+                await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomePageWidget(),
+                  ),
+                );
+              },
+              onDoubleTap: () async {
+                await Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomePageWidget(),
+                  ),
+                );
+              },
+              child: Image.network(
+                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/dashboard-data-stone-4wkh8k/assets/s4802hntu0y4/icone_ibuild_partner_google_play.png',
+                width: 25,
+                height: 25,
+                fit: BoxFit.cover,
+              ),
             ),
             Column(
               mainAxisSize: MainAxisSize.max,
@@ -154,16 +175,16 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 8),
                   child: InkWell(
                     onTap: () async {
                       await Navigator.push(
                         context,
                         PageTransition(
                           type: PageTransitionType.fade,
-                          duration: Duration(milliseconds: 0),
-                          reverseDuration: Duration(milliseconds: 0),
-                          child: TeamMembersWidget(),
+                          duration: Duration(milliseconds: 400),
+                          reverseDuration: Duration(milliseconds: 400),
+                          child: TeamMembersClientsWidget(),
                         ),
                       );
                     },
@@ -174,8 +195,8 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
                         Padding(
                           padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
                           child: Icon(
-                            Icons.work_outlined,
-                            color: widget.navFour,
+                            Icons.person_search_rounded,
+                            color: widget.navFive,
                             size: 24,
                           ),
                         ),
@@ -184,20 +205,93 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 8),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                        child: Icon(
-                          Icons.person_search_rounded,
-                          color: widget.navFive,
-                          size: 24,
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                  child: InkWell(
+                    onTap: () async {
+                      await Navigator.push(
+                        context,
+                        PageTransition(
+                          type: PageTransitionType.fade,
+                          duration: Duration(milliseconds: 400),
+                          reverseDuration: Duration(milliseconds: 400),
+                          child: ProjectsAltCopyWidget(),
                         ),
-                      ),
-                    ],
+                      );
+                    },
+                    onDoubleTap: () async {
+                      await Navigator.push(
+                        context,
+                        PageTransition(
+                          type: PageTransitionType.fade,
+                          duration: Duration(milliseconds: 400),
+                          reverseDuration: Duration(milliseconds: 400),
+                          child: ProjectsAltCopyWidget(),
+                        ),
+                      );
+                    },
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                          child: Icon(
+                            Icons.emoji_people_rounded,
+                            color: widget.navSix,
+                            size: 24,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                  child: InkWell(
+                    onTap: () async {
+                      await Navigator.push(
+                        context,
+                        PageTransition(
+                          type: PageTransitionType.fade,
+                          duration: Duration(milliseconds: 400),
+                          reverseDuration: Duration(milliseconds: 400),
+                          child: ProjectsAltCopy2Widget(),
+                        ),
+                      );
+                    },
+                    onDoubleTap: () async {
+                      await Navigator.push(
+                        context,
+                        PageTransition(
+                          type: PageTransitionType.fade,
+                          duration: Duration(milliseconds: 400),
+                          reverseDuration: Duration(milliseconds: 400),
+                          child: ProjectsAltCopy2Widget(),
+                        ),
+                      );
+                    },
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                          child: Icon(
+                            Icons.add_comment_outlined,
+                            color: widget.navSix,
+                            size: 24,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                  child: Icon(
+                    Icons.notifications,
+                    color: widget.navSix,
+                    size: 24,
                   ),
                 ),
                 Divider(
@@ -239,19 +333,32 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
                 ),
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                        child: Icon(
-                          Icons.settings_sharp,
-                          color: widget.navSix,
-                          size: 24,
+                  child: InkWell(
+                    onTap: () async {
+                      await Navigator.push(
+                        context,
+                        PageTransition(
+                          type: PageTransitionType.fade,
+                          duration: Duration(milliseconds: 0),
+                          reverseDuration: Duration(milliseconds: 0),
+                          child: TeamMembersWidget(),
                         ),
-                      ),
-                    ],
+                      );
+                    },
+                    child: Row(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                          child: Icon(
+                            Icons.work_outlined,
+                            color: widget.navFour,
+                            size: 24,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],

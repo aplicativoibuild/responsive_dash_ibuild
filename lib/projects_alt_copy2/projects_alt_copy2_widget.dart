@@ -3,25 +3,23 @@ import '../components/message_bottom_sheet_widget.dart';
 import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
-import '../flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'package:share_plus/share_plus.dart';
-import 'projects_alt_model.dart';
-export 'projects_alt_model.dart';
+import 'projects_alt_copy2_model.dart';
+export 'projects_alt_copy2_model.dart';
 
-class ProjectsAltWidget extends StatefulWidget {
-  const ProjectsAltWidget({Key? key}) : super(key: key);
+class ProjectsAltCopy2Widget extends StatefulWidget {
+  const ProjectsAltCopy2Widget({Key? key}) : super(key: key);
 
   @override
-  _ProjectsAltWidgetState createState() => _ProjectsAltWidgetState();
+  _ProjectsAltCopy2WidgetState createState() => _ProjectsAltCopy2WidgetState();
 }
 
-class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
-  late ProjectsAltModel _model;
+class _ProjectsAltCopy2WidgetState extends State<ProjectsAltCopy2Widget> {
+  late ProjectsAltCopy2Model _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final _unfocusNode = FocusNode();
@@ -29,7 +27,7 @@ class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ProjectsAltModel());
+    _model = createModel(context, () => ProjectsAltCopy2Model());
   }
 
   @override
@@ -591,7 +589,7 @@ class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
                                               CrossAxisAlignment.start,
                                           children: [
                                             Text(
-                                              'Editar Pedido de orçamento',
+                                              'Editar Comentários',
                                               style:
                                                   FlutterFlowTheme.of(context)
                                                       .title1,
@@ -600,7 +598,7 @@ class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(0, 4, 0, 0),
                                               child: Text(
-                                                'Edite e envie os pedidos dos clientes',
+                                                'Edite e aceitar os comentários recebidos ',
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyText2,
@@ -1008,10 +1006,46 @@ class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
                                                                 .fromSTEB(16, 0,
                                                                     0, 0),
                                                         child: Text(
-                                                          'Élida da Silva',
+                                                          'De: João',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
-                                                              .subtitle1,
+                                                              .subtitle1
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .subtitle1Family,
+                                                                fontSize: 15,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .subtitle1Family),
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Expanded(
+                                                      child: Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(16, 0,
+                                                                    0, 0),
+                                                        child: Text(
+                                                          'Para: Pedro',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .subtitle1
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .subtitle1Family,
+                                                                fontSize: 15,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .subtitle1Family),
+                                                              ),
                                                         ),
                                                       ),
                                                     ),
@@ -1021,70 +1055,10 @@ class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(0, 16, 0, 0),
                                                   child: Text(
-                                                    'Preciso de um assentador de pisos e azulejos',
+                                                    'Ótimo profissional, fui muito bem atendido. Parabéns iBuild',
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyText2,
-                                                  ),
-                                                ),
-                                                Divider(
-                                                  height: 24,
-                                                  thickness: 2,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .lineColor,
-                                                ),
-                                                Expanded(
-                                                  child: Builder(
-                                                    builder: (context) =>
-                                                        FFButtonWidget(
-                                                      onPressed: () async {
-                                                        await Share.share(
-                                                          '',
-                                                          sharePositionOrigin:
-                                                              getWidgetBoundingBox(
-                                                                  context),
-                                                        );
-                                                      },
-                                                      text: 'Download',
-                                                      icon: Icon(
-                                                        Icons
-                                                            .cloud_download_rounded,
-                                                        size: 15,
-                                                      ),
-                                                      options: FFButtonOptions(
-                                                        width: 130,
-                                                        height: 44,
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .secondaryBackground,
-                                                        textStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .subtitle2
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryText,
-                                                                  fontSize: 14,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w500,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .subtitle2Family),
-                                                                ),
-                                                        borderSide: BorderSide(
-                                                          color: Colors
-                                                              .transparent,
-                                                          width: 1,
-                                                        ),
-                                                      ),
-                                                    ),
                                                   ),
                                                 ),
                                               ],
@@ -1220,10 +1194,46 @@ class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
                                                                 .fromSTEB(16, 0,
                                                                     0, 0),
                                                         child: Text(
-                                                          'Élida da Silva',
+                                                          'De: João',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
-                                                              .subtitle1,
+                                                              .subtitle1
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .subtitle1Family,
+                                                                fontSize: 15,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .subtitle1Family),
+                                                              ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Expanded(
+                                                      child: Padding(
+                                                        padding:
+                                                            EdgeInsetsDirectional
+                                                                .fromSTEB(16, 0,
+                                                                    0, 0),
+                                                        child: Text(
+                                                          'Para: Pedro',
+                                                          style: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .subtitle1
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .subtitle1Family,
+                                                                fontSize: 15,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .subtitle1Family),
+                                                              ),
                                                         ),
                                                       ),
                                                     ),
@@ -1233,70 +1243,10 @@ class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(0, 16, 0, 0),
                                                   child: Text(
-                                                    'Preciso de um assentador de pisos e azulejos',
+                                                    'Ótimo profissional, fui muito bem atendido. Parabéns iBuild',
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyText2,
-                                                  ),
-                                                ),
-                                                Divider(
-                                                  height: 24,
-                                                  thickness: 2,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .lineColor,
-                                                ),
-                                                Expanded(
-                                                  child: Builder(
-                                                    builder: (context) =>
-                                                        FFButtonWidget(
-                                                      onPressed: () async {
-                                                        await Share.share(
-                                                          '',
-                                                          sharePositionOrigin:
-                                                              getWidgetBoundingBox(
-                                                                  context),
-                                                        );
-                                                      },
-                                                      text: 'Download',
-                                                      icon: Icon(
-                                                        Icons
-                                                            .cloud_download_rounded,
-                                                        size: 15,
-                                                      ),
-                                                      options: FFButtonOptions(
-                                                        width: 130,
-                                                        height: 44,
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .secondaryBackground,
-                                                        textStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .subtitle2
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryText,
-                                                                  fontSize: 14,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w500,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .subtitle2Family),
-                                                                ),
-                                                        borderSide: BorderSide(
-                                                          color: Colors
-                                                              .transparent,
-                                                          width: 1,
-                                                        ),
-                                                      ),
-                                                    ),
                                                   ),
                                                 ),
                                               ],
@@ -1432,209 +1382,22 @@ class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
                                                                 .fromSTEB(16, 0,
                                                                     0, 0),
                                                         child: Text(
-                                                          'Élida da Silva',
+                                                          'De: João',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
-                                                              .subtitle1,
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                                Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(0, 16, 0, 0),
-                                                  child: Text(
-                                                    'Preciso de um assentador de pisos e azulejos',
-                                                    style: FlutterFlowTheme.of(
-                                                            context)
-                                                        .bodyText2,
-                                                  ),
-                                                ),
-                                                Divider(
-                                                  height: 24,
-                                                  thickness: 2,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .lineColor,
-                                                ),
-                                                Expanded(
-                                                  child: Builder(
-                                                    builder: (context) =>
-                                                        FFButtonWidget(
-                                                      onPressed: () async {
-                                                        await Share.share(
-                                                          '',
-                                                          sharePositionOrigin:
-                                                              getWidgetBoundingBox(
-                                                                  context),
-                                                        );
-                                                      },
-                                                      text: 'Download',
-                                                      icon: Icon(
-                                                        Icons
-                                                            .cloud_download_rounded,
-                                                        size: 15,
-                                                      ),
-                                                      options: FFButtonOptions(
-                                                        width: 130,
-                                                        height: 44,
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .secondaryBackground,
-                                                        textStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .subtitle2
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryText,
-                                                                  fontSize: 14,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w500,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .subtitle2Family),
-                                                                ),
-                                                        borderSide: BorderSide(
-                                                          color: Colors
-                                                              .transparent,
-                                                          width: 1,
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            4, 12, 16, 12),
-                                        child: Container(
-                                          width: 330,
-                                          decoration: BoxDecoration(
-                                            color: FlutterFlowTheme.of(context)
-                                                .secondaryBackground,
-                                            boxShadow: [
-                                              BoxShadow(
-                                                blurRadius: 4,
-                                                color: Color(0x2B202529),
-                                                offset: Offset(0, 2),
-                                              )
-                                            ],
-                                            borderRadius:
-                                                BorderRadius.circular(16),
-                                            border: Border.all(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .lineColor,
-                                              width: 1,
-                                            ),
-                                          ),
-                                          child: Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    12, 12, 12, 12),
-                                            child: Column(
-                                              mainAxisSize: MainAxisSize.max,
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                Row(
-                                                  mainAxisSize:
-                                                      MainAxisSize.max,
-                                                  children: [
-                                                    Container(
-                                                      width: 100,
-                                                      height: 70,
-                                                      child: Stack(
-                                                        children: [
-                                                          ClipRRect(
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        8),
-                                                            child:
-                                                                Image.network(
-                                                              'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80',
-                                                              width: 100,
-                                                              height: 70,
-                                                              fit: BoxFit.cover,
-                                                            ),
-                                                          ),
-                                                          Align(
-                                                            alignment:
-                                                                AlignmentDirectional(
-                                                                    1.01, 1.05),
-                                                            child: ClipRRect(
-                                                              child:
-                                                                  BackdropFilter(
-                                                                filter:
-                                                                    ImageFilter
-                                                                        .blur(
-                                                                  sigmaX: 5,
-                                                                  sigmaY: 2,
-                                                                ),
-                                                                child:
-                                                                    Container(
-                                                                  width: 50,
-                                                                  height: 24,
-                                                                  decoration:
-                                                                      BoxDecoration(
-                                                                    color: Color(
-                                                                        0xBF0F1113),
-                                                                    borderRadius:
-                                                                        BorderRadius
-                                                                            .only(
-                                                                      bottomLeft:
-                                                                          Radius.circular(
-                                                                              0),
-                                                                      bottomRight:
-                                                                          Radius.circular(
-                                                                              8),
-                                                                      topLeft: Radius
-                                                                          .circular(
-                                                                              8),
-                                                                      topRight:
-                                                                          Radius.circular(
-                                                                              0),
-                                                                    ),
-                                                                  ),
-                                                                  alignment:
-                                                                      AlignmentDirectional(
-                                                                          0, 0),
-                                                                  child: Text(
-                                                                    '05:03',
-                                                                    style: FlutterFlowTheme.of(
-                                                                            context)
-                                                                        .bodyText1
-                                                                        .override(
-                                                                          fontFamily:
-                                                                              'Outfit',
-                                                                          color:
-                                                                              Colors.white,
-                                                                          fontSize:
-                                                                              14,
-                                                                          fontWeight:
-                                                                              FontWeight.normal,
-                                                                          useGoogleFonts:
-                                                                              GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyText1Family),
-                                                                        ),
-                                                                  ),
-                                                                ),
+                                                              .subtitle1
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .subtitle1Family,
+                                                                fontSize: 15,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .subtitle1Family),
                                                               ),
-                                                            ),
-                                                          ),
-                                                        ],
+                                                        ),
                                                       ),
                                                     ),
                                                     Expanded(
@@ -1644,10 +1407,21 @@ class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
                                                                 .fromSTEB(16, 0,
                                                                     0, 0),
                                                         child: Text(
-                                                          'Élida da Silva',
+                                                          'Para: Pedro',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
-                                                              .subtitle1,
+                                                              .subtitle1
+                                                              .override(
+                                                                fontFamily: FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .subtitle1Family,
+                                                                fontSize: 15,
+                                                                useGoogleFonts: GoogleFonts
+                                                                        .asMap()
+                                                                    .containsKey(
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .subtitle1Family),
+                                                              ),
                                                         ),
                                                       ),
                                                     ),
@@ -1657,70 +1431,10 @@ class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
                                                   padding: EdgeInsetsDirectional
                                                       .fromSTEB(0, 16, 0, 0),
                                                   child: Text(
-                                                    'Preciso de um assentador de pisos e azulejos',
+                                                    'Ótimo profissional, fui muito bem atendido. Parabéns iBuild',
                                                     style: FlutterFlowTheme.of(
                                                             context)
                                                         .bodyText2,
-                                                  ),
-                                                ),
-                                                Divider(
-                                                  height: 24,
-                                                  thickness: 2,
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .lineColor,
-                                                ),
-                                                Expanded(
-                                                  child: Builder(
-                                                    builder: (context) =>
-                                                        FFButtonWidget(
-                                                      onPressed: () async {
-                                                        await Share.share(
-                                                          '',
-                                                          sharePositionOrigin:
-                                                              getWidgetBoundingBox(
-                                                                  context),
-                                                        );
-                                                      },
-                                                      text: 'Download',
-                                                      icon: Icon(
-                                                        Icons
-                                                            .cloud_download_rounded,
-                                                        size: 15,
-                                                      ),
-                                                      options: FFButtonOptions(
-                                                        width: 130,
-                                                        height: 44,
-                                                        color: FlutterFlowTheme
-                                                                .of(context)
-                                                            .secondaryBackground,
-                                                        textStyle:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .subtitle2
-                                                                .override(
-                                                                  fontFamily:
-                                                                      'Outfit',
-                                                                  color: FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .primaryText,
-                                                                  fontSize: 14,
-                                                                  fontWeight:
-                                                                      FontWeight
-                                                                          .w500,
-                                                                  useGoogleFonts: GoogleFonts
-                                                                          .asMap()
-                                                                      .containsKey(
-                                                                          FlutterFlowTheme.of(context)
-                                                                              .subtitle2Family),
-                                                                ),
-                                                        borderSide: BorderSide(
-                                                          color: Colors
-                                                              .transparent,
-                                                          width: 1,
-                                                        ),
-                                                      ),
-                                                    ),
                                                   ),
                                                 ),
                                               ],

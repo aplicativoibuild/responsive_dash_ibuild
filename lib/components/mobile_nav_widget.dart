@@ -3,7 +3,7 @@ import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../home_page/home_page_widget.dart';
 import '../projects/projects_widget.dart';
-import '../team_members/team_members_widget.dart';
+import '../team_members_clients/team_members_clients_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -183,7 +183,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
                           type: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
                           reverseDuration: Duration(milliseconds: 0),
-                          child: TeamMembersWidget(),
+                          child: TeamMembersClientsWidget(),
                         ),
                       );
                     },
@@ -207,19 +207,29 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
               Expanded(
                 child: Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      widget.navTwoIcon!,
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
-                        child: Text(
-                          'Assinantes',
-                          style: FlutterFlowTheme.of(context).bodyText2,
+                  child: InkWell(
+                    onTap: () async {
+                      await Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => BillingWidget(),
                         ),
-                      ),
-                    ],
+                      );
+                    },
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        widget.navTwoIcon!,
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                          child: Text(
+                            'Assinantes',
+                            style: FlutterFlowTheme.of(context).bodyText2,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

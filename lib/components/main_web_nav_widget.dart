@@ -5,8 +5,11 @@ import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import '../home_page/home_page_widget.dart';
 import '../projects/projects_widget.dart';
+import '../projects_alt_copy/projects_alt_copy_widget.dart';
+import '../projects_alt_copy2/projects_alt_copy2_widget.dart';
 import '../team_members/team_members_widget.dart';
 import '../team_members_clients/team_members_clients_widget.dart';
+import '../team_members_clients_copy_copy/team_members_clients_copy_copy_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -248,48 +251,6 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                       type: PageTransitionType.fade,
                       duration: Duration(milliseconds: 400),
                       reverseDuration: Duration(milliseconds: 400),
-                      child: TeamMembersWidget(),
-                    ),
-                  );
-                },
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                      child: Icon(
-                        Icons.work_outlined,
-                        color: widget.navFour,
-                        size: 24,
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
-                      child: Text(
-                        'Colaboradores',
-                        style: FlutterFlowTheme.of(context).bodyText1.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyText1Family,
-                              color: widget.navFour,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyText1Family),
-                            ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-              child: InkWell(
-                onTap: () async {
-                  await Navigator.push(
-                    context,
-                    PageTransition(
-                      type: PageTransitionType.fade,
-                      duration: Duration(milliseconds: 400),
-                      reverseDuration: Duration(milliseconds: 400),
                       child: TeamMembersClientsWidget(),
                     ),
                   );
@@ -313,6 +274,162 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                               fontFamily:
                                   FlutterFlowTheme.of(context).bodyText1Family,
                               color: widget.navFive,
+                              useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                  FlutterFlowTheme.of(context).bodyText1Family),
+                            ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+              child: InkWell(
+                onTap: () async {
+                  await Navigator.push(
+                    context,
+                    PageTransition(
+                      type: PageTransitionType.fade,
+                      duration: Duration(milliseconds: 400),
+                      reverseDuration: Duration(milliseconds: 400),
+                      child: ProjectsAltCopyWidget(),
+                    ),
+                  );
+                },
+                onDoubleTap: () async {
+                  await Navigator.push(
+                    context,
+                    PageTransition(
+                      type: PageTransitionType.fade,
+                      duration: Duration(milliseconds: 400),
+                      reverseDuration: Duration(milliseconds: 400),
+                      child: ProjectsAltCopyWidget(),
+                    ),
+                  );
+                },
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                      child: Icon(
+                        Icons.emoji_people,
+                        color: widget.navTwo,
+                        size: 24,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                      child: Text(
+                        'Alterações',
+                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                              fontFamily:
+                                  FlutterFlowTheme.of(context).bodyText1Family,
+                              color: widget.navTwo,
+                              useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                  FlutterFlowTheme.of(context).bodyText1Family),
+                            ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+              child: InkWell(
+                onTap: () async {
+                  await Navigator.push(
+                    context,
+                    PageTransition(
+                      type: PageTransitionType.fade,
+                      duration: Duration(milliseconds: 400),
+                      reverseDuration: Duration(milliseconds: 400),
+                      child: ProjectsAltCopy2Widget(),
+                    ),
+                  );
+                },
+                onDoubleTap: () async {
+                  await Navigator.push(
+                    context,
+                    PageTransition(
+                      type: PageTransitionType.fade,
+                      duration: Duration(milliseconds: 400),
+                      reverseDuration: Duration(milliseconds: 400),
+                      child: ProjectsAltCopy2Widget(),
+                    ),
+                  );
+                },
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                      child: Icon(
+                        Icons.add_comment_outlined,
+                        color: widget.navTwo,
+                        size: 24,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                      child: Text(
+                        'Comentários',
+                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                              fontFamily:
+                                  FlutterFlowTheme.of(context).bodyText1Family,
+                              color: widget.navTwo,
+                              useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                  FlutterFlowTheme.of(context).bodyText1Family),
+                            ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+              child: InkWell(
+                onTap: () async {
+                  await Navigator.push(
+                    context,
+                    PageTransition(
+                      type: PageTransitionType.fade,
+                      duration: Duration(milliseconds: 400),
+                      reverseDuration: Duration(milliseconds: 400),
+                      child: TeamMembersClientsCopyCopyWidget(),
+                    ),
+                  );
+                },
+                onDoubleTap: () async {
+                  await Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => TeamMembersClientsCopyCopyWidget(),
+                    ),
+                  );
+                },
+                child: Row(
+                  mainAxisSize: MainAxisSize.max,
+                  children: [
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                      child: Icon(
+                        Icons.send_to_mobile,
+                        color: widget.navTwo,
+                        size: 24,
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                      child: Text(
+                        'Mensagens',
+                        style: FlutterFlowTheme.of(context).bodyText1.override(
+                              fontFamily:
+                                  FlutterFlowTheme.of(context).bodyText1Family,
+                              color: widget.navTwo,
                               useGoogleFonts: GoogleFonts.asMap().containsKey(
                                   FlutterFlowTheme.of(context).bodyText1Family),
                             ),
@@ -381,7 +498,7 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                       type: PageTransitionType.fade,
                       duration: Duration(milliseconds: 400),
                       reverseDuration: Duration(milliseconds: 400),
-                      child: HomePageWidget(),
+                      child: TeamMembersWidget(),
                     ),
                   );
                 },
@@ -391,19 +508,19 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                     Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
                       child: Icon(
-                        Icons.settings_sharp,
-                        color: widget.navTwo,
+                        Icons.work_outlined,
+                        color: widget.navFour,
                         size: 24,
                       ),
                     ),
                     Padding(
                       padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
                       child: Text(
-                        'Configurações',
+                        'Colaboradores',
                         style: FlutterFlowTheme.of(context).bodyText1.override(
                               fontFamily:
                                   FlutterFlowTheme.of(context).bodyText1Family,
-                              color: widget.navTwo,
+                              color: widget.navFour,
                               useGoogleFonts: GoogleFonts.asMap().containsKey(
                                   FlutterFlowTheme.of(context).bodyText1Family),
                             ),
@@ -422,7 +539,7 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                   children: [
                     Container(
                       width: double.infinity,
-                      height: 170,
+                      height: 150,
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           colors: [
@@ -491,7 +608,7 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                                   text: 'Chamar Especialista',
                                   options: FFButtonOptions(
                                     width: double.infinity,
-                                    height: 48,
+                                    height: 40,
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
                                     textStyle:

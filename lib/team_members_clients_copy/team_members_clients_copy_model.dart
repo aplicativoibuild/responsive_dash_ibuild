@@ -4,17 +4,17 @@ import '../components/mobile_nav_widget.dart';
 import '../flutter_flow/flutter_flow_icon_button.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
-import '../team_members_clients_copy/team_members_clients_copy_widget.dart';
 import 'package:badges/badges.dart' as badges;
-import 'package:auto_size_text/auto_size_text.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class TeamMembersClientsModel extends FlutterFlowModel {
+class TeamMembersClientsCopyModel extends FlutterFlowModel {
   ///  State fields for stateful widgets in this page.
 
+  final formKey3 = GlobalKey<FormState>();
+  final formKey1 = GlobalKey<FormState>();
+  final formKey2 = GlobalKey<FormState>();
   // Model for altNav_2 component.
   late AltNav2Model altNav2Model;
   // Model for mobileNav component.

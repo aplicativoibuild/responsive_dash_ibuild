@@ -1,15 +1,15 @@
 import '../components/main_web_nav_widget.dart';
 import '../components/message_bottom_sheet_widget.dart';
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '../assets_ff/assets_ff_icon_button.dart';
+import '../assets_ff/assets_ff_theme.dart';
+import '../assets_ff/assets_ff_util.dart';
 import 'dart:ui';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class ProjectsAltCopyModel extends FlutterFlowModel {
+class pedidosAltCopyModel extends FlutterFlowModel {
   ///  State fields for stateful widgets in this page.
 
   final formKey1 = GlobalKey<FormState>();

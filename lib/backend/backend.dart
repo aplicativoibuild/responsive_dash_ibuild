@@ -1,7 +1,7 @@
 import 'package:built_value/serializer.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-import '../flutter_flow/flutter_flow_util.dart';
+import '../assets_ff/assets_ff_util.dart';
 
 import 'schema/users_record.dart';
 import 'schema/transactions_record.dart';

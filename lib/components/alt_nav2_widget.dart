@@ -1,11 +1,11 @@
-import '../billing/billing_widget.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '../assinantes/assinantes_widget.dart';
+import '../assets_ff/assets_ff_theme.dart';
+import '../assets_ff/assets_ff_util.dart';
 import '../inicio/inicio_widget.dart';
-import '../projects/projects_widget.dart';
+import '../pedidos/pedidos_widget.dart';
 import '../alteracoes/alteracoes_widget.dart';
 import '../comentarios/comentarios_widget.dart';
-import '../team_members/team_members_widget.dart';
+import '../colaboradores/colaboradores_widget.dart';
 import '../parceiros/parceiros_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -96,7 +96,7 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
                 );
               },
               child: Image.network(
-                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/dashboard-data-stone-4wkh8k/assets/s4802hntu0y4/icone_ibuild_partner_google_play.png',
+                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/pedidos/dashboard-data-stone-4wkh8k/assets/s4802hntu0y4/icone_ibuild_partner_google_play.png',
                 width: 25,
                 height: 25,
                 fit: BoxFit.cover,
@@ -154,7 +154,7 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
                           type: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
                           reverseDuration: Duration(milliseconds: 0),
-                          child: ProjectsWidget(),
+                          child: pedidosWidget(),
                         ),
                       );
                     },
@@ -214,7 +214,7 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
                           type: PageTransitionType.fade,
                           duration: Duration(milliseconds: 400),
                           reverseDuration: Duration(milliseconds: 400),
-                          child: ProjectsAltCopyWidget(),
+                          child: pedidosAltCopyWidget(),
                         ),
                       );
                     },
@@ -225,7 +225,7 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
                           type: PageTransitionType.fade,
                           duration: Duration(milliseconds: 400),
                           reverseDuration: Duration(milliseconds: 400),
-                          child: ProjectsAltCopyWidget(),
+                          child: pedidosAltCopyWidget(),
                         ),
                       );
                     },
@@ -255,7 +255,7 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
                           type: PageTransitionType.fade,
                           duration: Duration(milliseconds: 400),
                           reverseDuration: Duration(milliseconds: 400),
-                          child: ProjectsAltCopy2Widget(),
+                          child: pedidosAltCopy2Widget(),
                         ),
                       );
                     },
@@ -266,7 +266,7 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
                           type: PageTransitionType.fade,
                           duration: Duration(milliseconds: 400),
                           reverseDuration: Duration(milliseconds: 400),
-                          child: ProjectsAltCopy2Widget(),
+                          child: pedidosAltCopy2Widget(),
                         ),
                       );
                     },
@@ -311,7 +311,7 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
                           type: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
                           reverseDuration: Duration(milliseconds: 0),
-                          child: BillingWidget(),
+                          child: assinantesWidget(),
                         ),
                       );
                     },

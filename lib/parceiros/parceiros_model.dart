@@ -1,9 +1,9 @@
 import '../components/alt_nav2_widget.dart';
 import '../components/message_bottom_sheet_widget.dart';
 import '../components/mobile_nav_widget.dart';
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '../assets_ff/assets_ff_icon_button.dart';
+import '../assets_ff/assets_ff_theme.dart';
+import '../assets_ff/assets_ff_util.dart';
 import '../incluir_editar/incluir_editar_widget.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:auto_size_text/auto_size_text.dart';

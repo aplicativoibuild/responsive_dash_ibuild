@@ -1,9 +1,9 @@
 import '../components/main_web_nav_widget.dart';
 import '../components/message_bottom_sheet_widget.dart';
 import '../components/mobile_nav_widget.dart';
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '../assets_ff/assets_ff_icon_button.dart';
+import '../assets_ff/assets_ff_theme.dart';
+import '../assets_ff/assets_ff_util.dart';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -11,15 +11,15 @@ import 'package:provider/provider.dart';
 import 'upgrade_manual_model.dart';
 export 'upgrade_manual_model.dart';
 
-class BillingCopyWidget extends StatefulWidget {
-  const BillingCopyWidget({Key? key}) : super(key: key);
+class assinantesCopyWidget extends StatefulWidget {
+  const assinantesCopyWidget({Key? key}) : super(key: key);
 
   @override
-  _BillingCopyWidgetState createState() => _BillingCopyWidgetState();
+  _assinantesCopyWidgetState createState() => _assinantesCopyWidgetState();
 }
 
-class _BillingCopyWidgetState extends State<BillingCopyWidget> {
-  late BillingCopyModel _model;
+class _assinantesCopyWidgetState extends State<assinantesCopyWidget> {
+  late assinantesCopyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final _unfocusNode = FocusNode();
@@ -27,7 +27,7 @@ class _BillingCopyWidgetState extends State<BillingCopyWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => BillingCopyModel());
+    _model = createModel(context, () => assinantesCopyModel());
   }
 
   @override
@@ -749,7 +749,7 @@ class _BillingCopyWidgetState extends State<BillingCopyWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(16),
                                                 child: Image.network(
-                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/dashboard-data-stone-4wkh8k/assets/yoabae3cckv4/WhatsApp_Image_2022-12-07_at_09.45.20_(2).jpeg',
+                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/pedidos/dashboard-data-stone-4wkh8k/assets/yoabae3cckv4/WhatsApp_Image_2022-12-07_at_09.45.20_(2).jpeg',
                                                   width: 100,
                                                   height: 100,
                                                   fit: BoxFit.cover,

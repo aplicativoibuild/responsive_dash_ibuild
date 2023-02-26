@@ -1,8 +1,8 @@
-import '../billing/billing_widget.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
+import '../assinantes/assinantes_widget.dart';
+import '../assets_ff/assets_ff_theme.dart';
+import '../assets_ff/assets_ff_util.dart';
 import '../inicio/inicio_widget.dart';
-import '../projects/projects_widget.dart';
+import '../pedidos/pedidos_widget.dart';
 import '../parceiros/parceiros_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -119,7 +119,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
                           type: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
                           reverseDuration: Duration(milliseconds: 0),
-                          child: ProjectsWidget(),
+                          child: pedidosWidget(),
                         ),
                       );
                     },
@@ -151,7 +151,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
                           type: PageTransitionType.fade,
                           duration: Duration(milliseconds: 0),
                           reverseDuration: Duration(milliseconds: 0),
-                          child: BillingWidget(),
+                          child: assinantesWidget(),
                         ),
                       );
                     },
@@ -212,7 +212,7 @@ class _MobileNavWidgetState extends State<MobileNavWidget> {
                       await Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => BillingWidget(),
+                          builder: (context) => assinantesWidget(),
                         ),
                       );
                     },

@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'backend/firebase/firebase_config.dart';
-import 'flutter_flow/flutter_flow_theme.dart';
-import 'flutter_flow/flutter_flow_util.dart';
-import 'flutter_flow/internationalization.dart';
+import 'assets_ff/assets_ff_theme.dart';
+import 'assets_ff/assets_ff_util.dart';
+import 'assets_ff/internationalization.dart';
 import 'index.dart';
-import 'flutter_flow/revenue_cat_util.dart' as revenue_cat;
+import 'assets_ff/revenue_cat_util.dart' as revenue_cat;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

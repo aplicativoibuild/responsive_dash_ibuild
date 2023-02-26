@@ -1,9 +1,9 @@
 import '../components/main_web_nav_widget.dart';
 import '../components/message_bottom_sheet_widget.dart';
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
-import '../flutter_flow/flutter_flow_widgets.dart';
+import '../assets_ff/assets_ff_icon_button.dart';
+import '../assets_ff/assets_ff_theme.dart';
+import '../assets_ff/assets_ff_util.dart';
+import '../assets_ff/assets_ff_widgets.dart';
 import 'dart:ui';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
@@ -13,15 +13,15 @@ import 'package:share_plus/share_plus.dart';
 import 'editar_pedido_model.dart';
 export 'editar_pedido_model.dart';
 
-class ProjectsAltWidget extends StatefulWidget {
-  const ProjectsAltWidget({Key? key}) : super(key: key);
+class pedidosAltWidget extends StatefulWidget {
+  const pedidosAltWidget({Key? key}) : super(key: key);
 
   @override
-  _ProjectsAltWidgetState createState() => _ProjectsAltWidgetState();
+  _pedidosAltWidgetState createState() => _pedidosAltWidgetState();
 }
 
-class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
-  late ProjectsAltModel _model;
+class _pedidosAltWidgetState extends State<pedidosAltWidget> {
+  late pedidosAltModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
   final _unfocusNode = FocusNode();
@@ -29,7 +29,7 @@ class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => ProjectsAltModel());
+    _model = createModel(context, () => pedidosAltModel());
   }
 
   @override
@@ -799,7 +799,7 @@ class _ProjectsAltWidgetState extends State<ProjectsAltWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(16),
                                                 child: Image.network(
-                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/dashboard-data-stone-4wkh8k/assets/yoabae3cckv4/WhatsApp_Image_2022-12-07_at_09.45.20_(2).jpeg',
+                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/pedidos/dashboard-data-stone-4wkh8k/assets/yoabae3cckv4/WhatsApp_Image_2022-12-07_at_09.45.20_(2).jpeg',
                                                   width: 100,
                                                   height: 100,
                                                   fit: BoxFit.cover,

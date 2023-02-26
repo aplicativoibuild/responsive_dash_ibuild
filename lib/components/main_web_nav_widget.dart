@@ -1,13 +1,13 @@
-import '../billing/billing_widget.dart';
-import '../flutter_flow/flutter_flow_animations.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
-import '../flutter_flow/flutter_flow_widgets.dart';
+import '../assinantes/assinantes_widget.dart';
+import '../assets_ff/assets_ff_animations.dart';
+import '../assets_ff/assets_ff_theme.dart';
+import '../assets_ff/assets_ff_util.dart';
+import '../assets_ff/assets_ff_widgets.dart';
 import '../inicio/inicio_widget.dart';
-import '../projects/projects_widget.dart';
+import '../pedidos/pedidos_widget.dart';
 import '../alteracoes/alteracoes_widget.dart';
 import '../comentarios/comentarios_widget.dart';
-import '../team_members/team_members_widget.dart';
+import '../colaboradores/colaboradores_widget.dart';
 import '../parceiros/parceiros_widget.dart';
 import '../mensagens/mensagens_widget.dart';
 import 'package:flutter/material.dart';
@@ -135,7 +135,7 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Image.network(
-                    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/dashboard-data-stone-4wkh8k/assets/s4802hntu0y4/icone_ibuild_partner_google_play.png',
+                    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/pedidos/dashboard-data-stone-4wkh8k/assets/s4802hntu0y4/icone_ibuild_partner_google_play.png',
                     width: 100,
                     height: 100,
                     fit: BoxFit.cover,
@@ -209,7 +209,7 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                       type: PageTransitionType.fade,
                       duration: Duration(milliseconds: 400),
                       reverseDuration: Duration(milliseconds: 400),
-                      child: ProjectsWidget(),
+                      child: pedidosWidget(),
                     ),
                   );
                 },
@@ -293,7 +293,7 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                       type: PageTransitionType.fade,
                       duration: Duration(milliseconds: 400),
                       reverseDuration: Duration(milliseconds: 400),
-                      child: ProjectsAltCopyWidget(),
+                      child: pedidosAltCopyWidget(),
                     ),
                   );
                 },
@@ -304,7 +304,7 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                       type: PageTransitionType.fade,
                       duration: Duration(milliseconds: 400),
                       reverseDuration: Duration(milliseconds: 400),
-                      child: ProjectsAltCopyWidget(),
+                      child: pedidosAltCopyWidget(),
                     ),
                   );
                 },
@@ -346,7 +346,7 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                       type: PageTransitionType.fade,
                       duration: Duration(milliseconds: 400),
                       reverseDuration: Duration(milliseconds: 400),
-                      child: ProjectsAltCopy2Widget(),
+                      child: pedidosAltCopy2Widget(),
                     ),
                   );
                 },
@@ -357,7 +357,7 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                       type: PageTransitionType.fade,
                       duration: Duration(milliseconds: 400),
                       reverseDuration: Duration(milliseconds: 400),
-                      child: ProjectsAltCopy2Widget(),
+                      child: pedidosAltCopy2Widget(),
                     ),
                   );
                 },
@@ -456,7 +456,7 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                       type: PageTransitionType.fade,
                       duration: Duration(milliseconds: 400),
                       reverseDuration: Duration(milliseconds: 400),
-                      child: BillingWidget(),
+                      child: assinantesWidget(),
                     ),
                   );
                 },

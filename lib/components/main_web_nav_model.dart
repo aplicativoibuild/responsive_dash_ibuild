@@ -1,8 +1,8 @@
 import '../assinantes/assinantes_widget.dart';
-import '../assets_ff/assets_ff_animations.dart';
-import '../assets_ff/assets_ff_theme.dart';
-import '../assets_ff/assets_ff_util.dart';
-import '../assets_ff/assets_ff_widgets.dart';
+import '../flutter_flow/flutter_flow_animations.dart';
+import '../flutter_flow/flutter_flow_theme.dart';
+import '../flutter_flow/flutter_flow_util.dart';
+import '../flutter_flow/flutter_flow_widgets.dart';
 import '../inicio/inicio_widget.dart';
 import '../pedidos/pedidos_widget.dart';
 import '../alteracoes/alteracoes_widget.dart';

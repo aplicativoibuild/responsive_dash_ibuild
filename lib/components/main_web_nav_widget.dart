@@ -15,6 +15,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+
 import 'main_web_nav_model.dart';
 export 'main_web_nav_model.dart';
 
@@ -104,434 +105,461 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 270,
+      width: 290,
       height: double.infinity,
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
         boxShadow: [
           BoxShadow(
             blurRadius: 0,
-            color: FlutterFlowTheme.of(context).lineColor,
+            color: FlutterFlowTheme.of(context).secondaryText,
             offset: Offset(1, 0),
           )
         ],
+        shape: BoxShape.rectangle,
       ),
       child: Padding(
         padding: EdgeInsetsDirectional.fromSTEB(24, 32, 24, 16),
-        child: Column(
-          mainAxisSize: MainAxisSize.max,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            InkWell(
-              onTap: () async {
-                await Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => HomePageWidget(),
-                  ),
-                );
-              },
-              child: Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Image.network(
-                    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/pedidos/dashboard-data-stone-4wkh8k/assets/s4802hntu0y4/icone_ibuild_partner_google_play.png',
-                    width: 100,
-                    height: 100,
-                    fit: BoxFit.cover,
-                  ),
-                  Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
-                    child: Text(
-                      'Painel',
-                      style: FlutterFlowTheme.of(context).title2,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
-              child: Text(
-                'MENU',
-                style: FlutterFlowTheme.of(context).bodyText1,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-              child: InkWell(
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.max,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              InkWell(
                 onTap: () async {
-                  await Navigator.push(
-                    context,
-                    PageTransition(
-                      type: PageTransitionType.fade,
-                      duration: Duration(milliseconds: 0),
-                      reverseDuration: Duration(milliseconds: 0),
-                      child: HomePageWidget(),
-                    ),
-                  );
-                },
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                      child: Icon(
-                        Icons.home_rounded,
-                        color: widget.navOne,
-                        size: 24,
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
-                      child: Text(
-                        'Início',
-                        style: FlutterFlowTheme.of(context).bodyText1.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyText1Family,
-                              color: widget.navOne,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyText1Family),
-                            ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-              child: InkWell(
-                onTap: () async {
-                  await Navigator.push(
-                    context,
-                    PageTransition(
-                      type: PageTransitionType.fade,
-                      duration: Duration(milliseconds: 400),
-                      reverseDuration: Duration(milliseconds: 400),
-                      child: pedidosWidget(),
-                    ),
-                  );
-                },
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                      child: Icon(
-                        Icons.content_paste_rounded,
-                        color: widget.navTwo,
-                        size: 24,
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
-                      child: Text(
-                        'Pedidos',
-                        style: FlutterFlowTheme.of(context).bodyText1.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyText1Family,
-                              color: widget.navTwo,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyText1Family),
-                            ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-              child: InkWell(
-                onTap: () async {
-                  await Navigator.push(
-                    context,
-                    PageTransition(
-                      type: PageTransitionType.fade,
-                      duration: Duration(milliseconds: 400),
-                      reverseDuration: Duration(milliseconds: 400),
-                      child: TeamMembersClientsWidget(),
-                    ),
-                  );
-                },
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                      child: Icon(
-                        Icons.person_search_rounded,
-                        color: widget.navFive,
-                        size: 24,
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
-                      child: Text(
-                        'Parceiros',
-                        style: FlutterFlowTheme.of(context).bodyText1.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyText1Family,
-                              color: widget.navFive,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyText1Family),
-                            ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-              child: InkWell(
-                onTap: () async {
-                  await Navigator.push(
-                    context,
-                    PageTransition(
-                      type: PageTransitionType.fade,
-                      duration: Duration(milliseconds: 400),
-                      reverseDuration: Duration(milliseconds: 400),
-                      child: pedidosAltCopyWidget(),
-                    ),
-                  );
-                },
-                onDoubleTap: () async {
-                  await Navigator.push(
-                    context,
-                    PageTransition(
-                      type: PageTransitionType.fade,
-                      duration: Duration(milliseconds: 400),
-                      reverseDuration: Duration(milliseconds: 400),
-                      child: pedidosAltCopyWidget(),
-                    ),
-                  );
-                },
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                      child: Icon(
-                        Icons.emoji_people,
-                        color: widget.navTwo,
-                        size: 24,
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
-                      child: Text(
-                        'Alterações',
-                        style: FlutterFlowTheme.of(context).bodyText1.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyText1Family,
-                              color: widget.navTwo,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyText1Family),
-                            ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-              child: InkWell(
-                onTap: () async {
-                  await Navigator.push(
-                    context,
-                    PageTransition(
-                      type: PageTransitionType.fade,
-                      duration: Duration(milliseconds: 400),
-                      reverseDuration: Duration(milliseconds: 400),
-                      child: pedidosAltCopy2Widget(),
-                    ),
-                  );
-                },
-                onDoubleTap: () async {
-                  await Navigator.push(
-                    context,
-                    PageTransition(
-                      type: PageTransitionType.fade,
-                      duration: Duration(milliseconds: 400),
-                      reverseDuration: Duration(milliseconds: 400),
-                      child: pedidosAltCopy2Widget(),
-                    ),
-                  );
-                },
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                      child: Icon(
-                        Icons.add_comment_outlined,
-                        color: widget.navTwo,
-                        size: 24,
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
-                      child: Text(
-                        'Comentários',
-                        style: FlutterFlowTheme.of(context).bodyText1.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyText1Family,
-                              color: widget.navTwo,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyText1Family),
-                            ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-              child: InkWell(
-                onTap: () async {
-                  await Navigator.push(
-                    context,
-                    PageTransition(
-                      type: PageTransitionType.fade,
-                      duration: Duration(milliseconds: 400),
-                      reverseDuration: Duration(milliseconds: 400),
-                      child: TeamMembersClientsCopyCopyWidget(),
-                    ),
-                  );
-                },
-                onDoubleTap: () async {
                   await Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => TeamMembersClientsCopyCopyWidget(),
+                      builder: (context) => HomePageWidget(),
                     ),
                   );
                 },
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                      child: Icon(
-                        Icons.send_to_mobile,
-                        color: widget.navTwo,
-                        size: 24,
-                      ),
+                    Image.network(
+                      'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/dashboard-data-stone-4wkh8k/assets/s4802hntu0y4/icone_ibuild_partner_google_play.png',
+                      width: 100,
+                      height: 100,
+                      fit: BoxFit.cover,
                     ),
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                      padding: EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                       child: Text(
-                        'Mensagens',
-                        style: FlutterFlowTheme.of(context).bodyText1.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyText1Family,
-                              color: widget.navTwo,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyText1Family),
-                            ),
+                        'Painel',
+                        style: FlutterFlowTheme.of(context).title2,
                       ),
                     ),
                   ],
                 ),
               ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
-              child: Text(
-                'FINANCEIRO',
-                style: FlutterFlowTheme.of(context).bodyText1,
-              ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-              child: InkWell(
-                onTap: () async {
-                  await Navigator.push(
-                    context,
-                    PageTransition(
-                      type: PageTransitionType.fade,
-                      duration: Duration(milliseconds: 400),
-                      reverseDuration: Duration(milliseconds: 400),
-                      child: assinantesWidget(),
-                    ),
-                  );
-                },
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                      child: Icon(
-                        Icons.person_add_alt_1_sharp,
-                        color: widget.navTwo,
-                        size: 24,
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
-                      child: Text(
-                        'Assinantes',
-                        style: FlutterFlowTheme.of(context).bodyText1.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyText1Family,
-                              color: widget.navTwo,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyText1Family),
-                            ),
-                      ),
-                    ),
-                  ],
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 24, 0, 0),
+                child: Text(
+                  'MENU',
+                  style: FlutterFlowTheme.of(context).bodyText1,
                 ),
               ),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-              child: InkWell(
-                onTap: () async {
-                  await Navigator.push(
-                    context,
-                    PageTransition(
-                      type: PageTransitionType.fade,
-                      duration: Duration(milliseconds: 400),
-                      reverseDuration: Duration(milliseconds: 400),
-                      child: TeamMembersWidget(),
-                    ),
-                  );
-                },
-                child: Row(
-                  mainAxisSize: MainAxisSize.max,
-                  children: [
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
-                      child: Icon(
-                        Icons.work_outlined,
-                        color: widget.navFour,
-                        size: 24,
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                child: InkWell(
+                  onTap: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 0),
+                        reverseDuration: Duration(milliseconds: 0),
+                        child: HomePageWidget(),
                       ),
-                    ),
-                    Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
-                      child: Text(
-                        'Colaboradores',
-                        style: FlutterFlowTheme.of(context).bodyText1.override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodyText1Family,
-                              color: widget.navFour,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodyText1Family),
-                            ),
+                    );
+                  },
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                        child: Icon(
+                          Icons.home_rounded,
+                          color: widget.navOne,
+                          size: 24,
+                        ),
                       ),
-                    ),
-                  ],
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                        child: Text(
+                          'Início',
+                          style: FlutterFlowTheme.of(context)
+                              .bodyText1
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .bodyText1Family,
+                                color: widget.navOne,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .bodyText1Family),
+                              ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
-            ),
-            Expanded(
-              child: Padding(
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                child: InkWell(
+                  onTap: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 400),
+                        reverseDuration: Duration(milliseconds: 400),
+                        child: pedidosWidget(),
+                      ),
+                    );
+                  },
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                        child: Icon(
+                          Icons.content_paste_rounded,
+                          color: widget.navTwo,
+                          size: 24,
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                        child: Text(
+                          'Pedidos',
+                          style: FlutterFlowTheme.of(context)
+                              .bodyText1
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .bodyText1Family,
+                                color: widget.navTwo,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .bodyText1Family),
+                              ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                child: InkWell(
+                  onTap: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 400),
+                        reverseDuration: Duration(milliseconds: 400),
+                        child: TeamMembersClientsWidget(),
+                      ),
+                    );
+                  },
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                        child: Icon(
+                          Icons.person_search_rounded,
+                          color: widget.navFive,
+                          size: 24,
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                        child: Text(
+                          'Parceiros',
+                          style: FlutterFlowTheme.of(context)
+                              .bodyText1
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .bodyText1Family,
+                                color: widget.navFive,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .bodyText1Family),
+                              ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                child: InkWell(
+                  onTap: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 400),
+                        reverseDuration: Duration(milliseconds: 400),
+                        child: pedidosAltCopyWidget(),
+                      ),
+                    );
+                  },
+                  onDoubleTap: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 400),
+                        reverseDuration: Duration(milliseconds: 400),
+                        child: pedidosAltCopyWidget(),
+                      ),
+                    );
+                  },
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                        child: Icon(
+                          Icons.emoji_people,
+                          color: widget.navTwo,
+                          size: 24,
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                        child: Text(
+                          'Alterações',
+                          style: FlutterFlowTheme.of(context)
+                              .bodyText1
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .bodyText1Family,
+                                color: widget.navTwo,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .bodyText1Family),
+                              ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                child: InkWell(
+                  onTap: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 400),
+                        reverseDuration: Duration(milliseconds: 400),
+                        child: pedidosAltCopy2Widget(),
+                      ),
+                    );
+                  },
+                  onDoubleTap: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 400),
+                        reverseDuration: Duration(milliseconds: 400),
+                        child: pedidosAltCopy2Widget(),
+                      ),
+                    );
+                  },
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                        child: Icon(
+                          Icons.add_comment_outlined,
+                          color: widget.navTwo,
+                          size: 24,
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                        child: Text(
+                          'Comentários',
+                          style: FlutterFlowTheme.of(context)
+                              .bodyText1
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .bodyText1Family,
+                                color: widget.navTwo,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .bodyText1Family),
+                              ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                child: InkWell(
+                  onTap: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 400),
+                        reverseDuration: Duration(milliseconds: 400),
+                        child: TeamMembersClientsCopyCopyWidget(),
+                      ),
+                    );
+                  },
+                  onDoubleTap: () async {
+                    await Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            TeamMembersClientsCopyCopyWidget(),
+                      ),
+                    );
+                  },
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                        child: Icon(
+                          Icons.send_to_mobile,
+                          color: widget.navTwo,
+                          size: 24,
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                        child: Text(
+                          'Mensagens',
+                          style: FlutterFlowTheme.of(context)
+                              .bodyText1
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .bodyText1Family,
+                                color: widget.navTwo,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .bodyText1Family),
+                              ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 0),
+                child: Text(
+                  'FINANCEIRO',
+                  style: FlutterFlowTheme.of(context).bodyText1,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                child: InkWell(
+                  onTap: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 400),
+                        reverseDuration: Duration(milliseconds: 400),
+                        child: assinantesWidget(),
+                      ),
+                    );
+                  },
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                        child: Icon(
+                          Icons.person_add_alt_1_sharp,
+                          color: widget.navTwo,
+                          size: 24,
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                        child: Text(
+                          'Assinantes',
+                          style: FlutterFlowTheme.of(context)
+                              .bodyText1
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .bodyText1Family,
+                                color: widget.navTwo,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .bodyText1Family),
+                              ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                child: InkWell(
+                  onTap: () async {
+                    await Navigator.push(
+                      context,
+                      PageTransition(
+                        type: PageTransitionType.fade,
+                        duration: Duration(milliseconds: 400),
+                        reverseDuration: Duration(milliseconds: 400),
+                        child: TeamMembersWidget(),
+                      ),
+                    );
+                  },
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    children: [
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 8, 0, 8),
+                        child: Icon(
+                          Icons.work_outlined,
+                          color: widget.navFour,
+                          size: 24,
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
+                        child: Text(
+                          'Colaboradores',
+                          style: FlutterFlowTheme.of(context)
+                              .bodyText1
+                              .override(
+                                fontFamily: FlutterFlowTheme.of(context)
+                                    .bodyText1Family,
+                                color: widget.navFour,
+                                useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                    FlutterFlowTheme.of(context)
+                                        .bodyText1Family),
+                              ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 24),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
@@ -608,7 +636,7 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                                   text: 'Chamar Especialista',
                                   options: FFButtonOptions(
                                     width: double.infinity,
-                                    height: 40,
+                                    height: 32,
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
                                     textStyle:
@@ -815,8 +843,8 @@ class _MainWebNavWidgetState extends State<MainWebNavWidget>
                   ],
                 ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

@@ -872,16 +872,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                     child: InkWell(
                                                       onTap: () async {
                                                         await launchURL(
-                                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/pedidos/dashboard-data-stone-4wkh8k/assets/yoabae3cckv4/WhatsApp_Image_2022-12-07_at_09.45.20_(2).jpeg');
+                                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/dashboard-data-stone-4wkh8k/assets/yoabae3cckv4/WhatsApp_Image_2022-12-07_at_09.45.20_(2).jpeg');
                                                       },
                                                       child: ClipRRect(
                                                         borderRadius:
                                                             BorderRadius
                                                                 .circular(16),
                                                         child: Image.network(
-                                                          'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/pedidos/dashboard-data-stone-4wkh8k/assets/yoabae3cckv4/WhatsApp_Image_2022-12-07_at_09.45.20_(2).jpeg',
-                                                          width: 100,
-                                                          height: 100,
+                                                          'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/dashboard-data-stone-4wkh8k/assets/yoabae3cckv4/WhatsApp_Image_2022-12-07_at_09.45.20_(2).jpeg',
+                                                          width: 142,
+                                                          height: 142,
                                                           fit: BoxFit.cover,
                                                         ),
                                                       ),
@@ -1122,7 +1122,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                               style: FlutterFlowTheme.of(context).title1.override(
                                                                                     fontFamily: 'Outfit',
                                                                                     color: Colors.white,
-                                                                                    fontSize: 32,
+                                                                                    fontSize: 22,
                                                                                     fontWeight: FontWeight.w600,
                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).title1Family),
                                                                                   ),
@@ -1148,7 +1148,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                                                               style: FlutterFlowTheme.of(context).bodyText1.override(
                                                                                     fontFamily: 'Roboto Mono',
                                                                                     color: Colors.white,
-                                                                                    fontSize: 14,
+                                                                                    fontSize: 13,
                                                                                     fontWeight: FontWeight.normal,
                                                                                     useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyText1Family),
                                                                                   ),

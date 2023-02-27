@@ -797,7 +797,7 @@ class _pedidosAltCopyWidgetState extends State<pedidosAltCopyWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(16),
                                                 child: Image.network(
-                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/pedidos/dashboard-data-stone-4wkh8k/assets/yoabae3cckv4/WhatsApp_Image_2022-12-07_at_09.45.20_(2).jpeg',
+                                                  'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/dashboard-data-stone-4wkh8k/assets/yoabae3cckv4/WhatsApp_Image_2022-12-07_at_09.45.20_(2).jpeg',
                                                   width: 100,
                                                   height: 100,
                                                   fit: BoxFit.cover,

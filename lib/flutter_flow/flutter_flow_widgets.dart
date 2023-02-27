@@ -74,8 +74,8 @@ class _FFButtonWidgetState extends State<FFButtonWidget> {
     Widget textWidget = loading
         ? Center(
             child: Container(
-              width: 23,
-              height: 23,
+              width: 27,
+              height: 27,
               child: CircularProgressIndicator(
                 valueColor: AlwaysStoppedAnimation<Color>(
                   widget.options.textStyle!.color ?? Colors.white,

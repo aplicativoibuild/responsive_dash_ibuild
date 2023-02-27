@@ -96,7 +96,7 @@ class _AltNav2WidgetState extends State<AltNav2Widget> {
                 );
               },
               child: Image.network(
-                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/pedidos/dashboard-data-stone-4wkh8k/assets/s4802hntu0y4/icone_ibuild_partner_google_play.png',
+                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/dashboard-data-stone-4wkh8k/assets/s4802hntu0y4/icone_ibuild_partner_google_play.png',
                 width: 25,
                 height: 25,
                 fit: BoxFit.cover,
